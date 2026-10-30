@@ -17,3 +17,11 @@ class TelemetryRecord:
     device_id: str
     status: Status
     temperature: float
+
+
+@dataclass(frozen=True)
+class DeviceSummary:
+    device_id: str
+    total_records: int
+    avg_temperature: float
+    error_count: int
