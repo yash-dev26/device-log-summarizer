@@ -1,0 +1,14 @@
+[project]
+name = "device-log-summarizer"
+version = "0.1.0"
+description = "CLI tool that summarizes device telemetry from CSV files"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.7"]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
