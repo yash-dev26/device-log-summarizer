@@ -24,8 +24,21 @@ See [`output/summary.json`](output/summary.json) for the complete aggregated res
 
 Requires Python 3.10+. The core tool has no dependencies; the chart and tests need two packages.
 
+Create and activate a virtual environment before installing the optional dependencies:
+
+```powershell
+python -m venv .venv
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+# Windows Command Prompt: .venv\Scripts\activate.bat
+# macOS/Linux: source .venv/bin/activate
+python -m pip install --upgrade pip
+```
+
+With the virtual environment activated, install the project dependencies:
+
 ```bash
-pip install matplotlib pytest      # or: pip install -e ".[viz,dev]"
+python -m pip install -e ".[viz,dev]"
 ```
 
 ## Usage
